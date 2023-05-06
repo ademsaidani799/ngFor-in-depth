@@ -15,11 +15,19 @@
     </li>
   </ul>
 </div> -->
-
+<!-- 
 <div>
   <ng-container *ngFor="let num of nums"> 
     <li *ngIf="num % 2===0">
       {{num}}
     </li>
   </ng-container>
-</div>
+</div> -->
+
+<div>
+  <ng-container *ngFor="let num of nums" [ngClass]="{hide:num%2!==0}"> 
+    <li>
+      {{num}}
+    </li>
+  </ng-container>
+</div> 
