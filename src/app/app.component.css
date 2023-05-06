@@ -18,3 +18,11 @@ li{
 .hide{
     display: none;
 }
+
+.first{
+    background-color: red;
+}
+
+.last{
+background-color: white;
+}

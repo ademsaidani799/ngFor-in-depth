@@ -24,8 +24,16 @@
   </ng-container>
 </div> -->
 
-<div>
+<!-- <div>
   <ng-container *ngFor="let num of nums" [ngClass]="{hide:num%2!==0}"> 
+    <li>
+      {{num}}
+    </li>
+  </ng-container>
+</div>  -->
+
+<div>
+  <ng-container *ngFor="let num of nums;let f=first;let l = last;" [ngClass]="{first:f,last:l}"> 
     <li>
       {{num}}
     </li>
