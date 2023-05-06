@@ -8,10 +8,18 @@
     <li *ngFor="let num of nums;let i=even">{{i}}</li>
   </ul>
 </div> -->
-<div>
+<!-- <div>
   <ul> 
     <li *ngFor="let num of nums">
       <span *ngIf="num % 2===0">{{num}}</span>
     </li>
   </ul>
+</div> -->
+
+<div>
+  <ng-container *ngFor="let num of nums"> 
+    <li *ngIf="num % 2===0">
+      {{num}}
+    </li>
+  </ng-container>
 </div>
