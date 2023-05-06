@@ -26,3 +26,7 @@ li{
 .last{
 background-color: white;
 }
+
+span:nth-of-type(odd){
+    color:red;
+}

@@ -32,10 +32,14 @@
   </ng-container>
 </div>  -->
 
-<div>
+<!-- <div>
   <ng-container *ngFor="let num of nums;let f=first;let l = last;" [ngClass]="{first:f,last:l}"> 
     <li>
       {{num}}
     </li>
   </ng-container>
+</div>  -->
+
+<div>
+  <span *ngFor="let f of firstName|strtoar">{{f}}</span>
 </div> 
